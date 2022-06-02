@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import mongoose from 'mongoose'
 import cors from 'cors';
+import todoRouter from './src/routes/todo.routes.js';
 import userRouter from './src/routes/users.routes.js';
 import env from './config.js'
 
@@ -26,6 +27,9 @@ app.get('/', (req, res) => {
 
 // Handle User routes 
 app.use('/user', userRouter);
+
+// Handle Todo routes
+app.use('/todo', todoRouter);
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
