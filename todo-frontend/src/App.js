@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import Register from './views/Register';
 import UserContext from './contexts/UserContext';
 import Login from './views/Login';
+import Home from './views/Home';
 
 // Defines main app layout
 function App() {
@@ -34,6 +35,7 @@ function App() {
         </header>
         <BrowserRouter>
           <nav>
+            <Link to={'/'}>Home</Link>
             {/* Display navigation links based on user logged in or not*/}
             {!email && (
               <>
@@ -48,6 +50,7 @@ function App() {
             {/* Change the main app layout based on path user visits*/}
             <main>
               <Routes>
+                <Route exact path='/' element={<Home />} />
                 <Route exact path='/register' element={<Register />} />
                 <Route exact path='/login' element={<Login />} />
               </Routes>
