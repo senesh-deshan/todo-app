@@ -83,7 +83,7 @@ If you chose to run the app locally, API should be accessible by `http://localho
 
 The backend API documentation is in HTML format and can be opened in browser.
 
-[Todo Backend API Documentation](todo-backend\doc\index.html)
+[Todo Backend API Documentation](todo-backend/doc/index.html)
 
 ## Entity Relationship Diagram
 
