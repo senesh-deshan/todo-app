@@ -34,7 +34,7 @@ function Register() {
     return (
         <form action="" onSubmit={e => registerUser(e)}>
             {registerError && (
-                <div>
+                <div className='errormessage'>
                     REGISTER ERROR
                 </div>
             )}

@@ -31,7 +31,7 @@ function Login() {
     return (
         <form action="" onSubmit={e => loginUser(e)}>
             {loginError && (
-                <div>
+                <div className='errormessage'>
                     LOGIN ERROR
                 </div>
             )}

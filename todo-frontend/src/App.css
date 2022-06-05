@@ -112,3 +112,7 @@ ul li {
   cursor: pointer;
   line-height: 20px;
 }
+
+.errormessage {
+  color: red;
+}
